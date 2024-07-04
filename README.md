@@ -9,6 +9,7 @@ This repository contains Docker Compose configurations for several popular servi
 - Redis
 - PostgreSQL
 - RabbitMQ
+- MongoDB
 
 ## How to Use
 
@@ -65,6 +66,13 @@ To start RabbitMQ:
 docker-compose -f docker-compose-rabbitmq.yml up -d
 ```
 Access RabbitMQ on port `5672` and the management console on port `15672`.
+
+### MongoDB
+To start MongoDB:
+```bash
+docker-compose -f docker-compose-mongodb.yml up -d
+```
+Access MongoDB on port `27017`.
 
 ### Stopping the Services
 To stop any service, use the corresponding command:
